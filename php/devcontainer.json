@@ -1,46 +1,46 @@
 {
     "name": "certif-ondemand",
-	"workspaceFolder": "/app",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-        	"PHP_VERSION": "8.3.8",
-			"XDEBUG_VERSION": "3.3.2"
-		},
-		"options": [ 
-			"--add-host=host.docker.internal:host-gateway"
-		]
-	},
-	"features": {
-		"ghcr.io/shyim/devcontainers-features/symfony-cli:0": {},
-		"ghcr.io/devcontainers-contrib/features/composer:1": {
-			"version": "2.7.7"
-		}
-	},
+    "workspaceFolder": "/app",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "PHP_VERSION": "8.3.8",
+            "XDEBUG_VERSION": "3.3.2"
+        },
+        "options": [ 
+            "--add-host=host.docker.internal:host-gateway"
+        ]
+    },
+    "features": {
+        "ghcr.io/shyim/devcontainers-features/symfony-cli:0": {},
+        "ghcr.io/devcontainers-contrib/features/composer:1": {
+            "version": "2.7.7"
+        }
+    },
     "postCreateCommand": "bash -i .devcontainer/postCreateCommand.sh",
-	"updateContentCommand": {
-		"composer install": ["composer", "install"]
-	},
-	"postAttachCommand": {
-		"server": "symfony server:start"
-	},
-	"containerEnv": {
+    "updateContentCommand": {
+        "composer install": ["composer", "install"]
+    },
+    "postAttachCommand": {
+        "server": "symfony server:start"
+    },
+    "containerEnv": {
         "XDEBUG_CONFIG": "client_port=9009 client_host=localhost log=/tmp/xdebug_remote.log",
         "XDEBUG_MODE": "debug,develop,coverage"
-	},
-	"mounts": [
-		"source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
-		"source=${localWorkspaceFolder},target=/app/,type=bind,consistency=cached"
-	],
-	"forwardPorts": [8000],
-	"portsAttributes": {
-		"8000": {
-			"label": "Symfony development server port",
-			"onAutoForward": "silent"
-		}
-	},
-	"customizations": {
-		"vscode": {
+    },
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
+        "source=${localWorkspaceFolder},target=/app/,type=bind,consistency=cached"
+    ],
+    "forwardPorts": [8000],
+    "portsAttributes": {
+        "8000": {
+            "label": "Symfony development server port",
+            "onAutoForward": "silent"
+        }
+    },
+    "customizations": {
+        "vscode": {
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "bash",
                 "terminal.integrated.profiles.linux": {
@@ -49,7 +49,7 @@
                     }
                 }
             },
-			"extensions": [
+            "extensions": [
                 "EditorConfig.EditorConfig",
                 "raathigeshan.fabulous",
                 "mhutchie.git-graph",
@@ -71,6 +71,6 @@
                 "neilbrayfield.php-docblocker",
                 "ms-azuretools.vscode-docker"
             ]
-		}
-	}
+        }
+    }
 }
