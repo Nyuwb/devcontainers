@@ -1,5 +1,5 @@
 {
-    "name": "certif-ondemand",
+    "name": "symfony-test-app",
     "workspaceFolder": "/app",
     "build": {
         "dockerfile": "Dockerfile",
