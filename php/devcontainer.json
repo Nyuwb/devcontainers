@@ -19,10 +19,10 @@
     },
     "postCreateCommand": "bash -i .devcontainer/postCreateCommand.sh",
     "updateContentCommand": {
-        "composer install": ["composer", "install"]
+        /**"composer install": ["composer", "install"]*/
     },
     "postAttachCommand": {
-        "server": "symfony server:start"
+        /**"server": "symfony server:start"*/
     },
     "containerEnv": {
         "XDEBUG_CONFIG": "client_port=9009 client_host=localhost log=/tmp/xdebug_remote.log",
