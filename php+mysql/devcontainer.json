@@ -16,19 +16,12 @@
     "postAttachCommand": {
         /**"server": "symfony server:start"*/
     },
-    "forwardPorts": [8000],
-    "portsAttributes": {
-        "8000": {
-            "label": "Symfony development server port",
-            "onAutoForward": "silent"
-        }
-    },
     "customizations": {
         "vscode": {
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "bash",
                 "terminal.integrated.profiles.linux": {
-                    "zsh": {
+                    "bash": {
                         "path": "/bin/bash"
                     }
                 }
