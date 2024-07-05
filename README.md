@@ -2,8 +2,8 @@
 
 ## What is this repository ?
 
-It's a collection of Visual Studio Code Dev Containers I'm using at work or on personal projects.   
-Feel free to fork this use them on your side and adapt the content for your need.
+It's a collection of Visual Studio Code Dev Containers that I'm using at work or on personal projects.   
+Feel free to fork this repository to use them on your side and adapt the content for your need.
 
 ## How is the repository organized ?
 
