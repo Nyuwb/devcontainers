@@ -1,2 +1,10 @@
-In case the devcontainer is not working, you can check the logs.
-For a first run, you'll have to comment the lines containing "composer install" and "symfony serve" because there will be nothing to run.
+## Description
+
+Create a `php-fpm` container for Symfony, without any database.  
+Lines 22 and 25 are commented because on the first build on an empty project, it will crash the container build.  
+
+Of course, this devcontainer can be used outside of Symfony.
+
+| Container | Version |
+|-|-|
+| *php-fpm* | 8.3.8 |
