@@ -7,5 +7,5 @@ Of course, this devcontainer can be used outside of Symfony.
 
 | Container | Version |
 |-|-|
-| *php-fpm* | 8.3.8 |
+| *php-fpm* | 8.3.9 |
 | *mysql* | 8.0.38 |

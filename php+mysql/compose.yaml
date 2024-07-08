@@ -17,7 +17,7 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        PHP_VERSION: 8.3.8
+        PHP_VERSION: 8.3.9
         XDEBUG_VERSION: 3.3.2
         XDEBUG_CONFIG: "client_port=9009 client_host=localhost log=/tmp/xdebug_remote.log"
         XDEBUG_MODE: "debug,develop,coverage"
