@@ -11,3 +11,4 @@ Of course, this devcontainer can be used outside of Symfony, just remove the `sy
 | *mysql* | 9.0.1 |
 | *composer* | 2.7.9 |
 | *node* | 20.17.0 |
+| *npm* | 10.8.2 |
