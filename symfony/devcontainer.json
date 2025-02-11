@@ -5,7 +5,7 @@
 	"service": "php",
     "features": {
         "ghcr.io/shyim/devcontainers-features/symfony-cli:0": {},
-        "ghcr.io/devcontainers-contrib/features/composer:1": {
+        "ghcr.io/devcontainers-extra/features/composer:1": {
             "version": "2.7.9"
         },
         "ghcr.io/devcontainers/features/node:1": {

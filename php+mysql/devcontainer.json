@@ -4,7 +4,7 @@
     "dockerComposeFile": "compose.yaml",
 	"service": "php",
     "features": {
-        "ghcr.io/devcontainers-contrib/features/composer:1": {
+        "ghcr.io/devcontainers-extra/features/composer:1": {
             "version": "2.7.9"
         }
     },
